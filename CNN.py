@@ -243,30 +243,3 @@ if out.history['val_acc'][24] >= .78:
     s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message4)
     s.quit()
 
-
-# In[ ]:
-
-
-#if out.history['val_acc'][24] >= .80:
-import smtplib
-s = smtplib.SMTP('smtp.gmail.com', 587)
-s.starttls()
-s.login("sdhah1999@gmail.com", "axnxovombplymgvw")
-#    message1 =accuracy
-#    message2 =mod
-#    message3 =optimzer
-#    message3 =learningRate
-    
- #   s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message1)
- #   s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message2)
-subject3= 'optimizer'
-subject4= 'learning rate'
-body3= optimizer
-body4= learningRate
-message3= f'Subject:{subject3}\n\n{body3}'
-message4= f'Subject:{subject4}\n\n{body4}'
-    
-s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message3)
-s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message4)
-s.quit()
-
