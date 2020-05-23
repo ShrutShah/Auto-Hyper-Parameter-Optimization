@@ -242,4 +242,5 @@ if out.history['val_accuracy'][24] >= .78:
     s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message3)
     s.sendmail("sdhah1999@gmail.com", "sdhah1999@gmail.com", message4)
     s.quit()
+    
 
