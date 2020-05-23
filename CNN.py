@@ -182,7 +182,7 @@ test_set = test_datagen.flow_from_directory(
 out = model.fit_generator(
         training_set,
         steps_per_epoch=8000,
-        epochs=25,
+        epochs=3,
         validation_data=test_set,
         validation_steps=800)
 
@@ -215,7 +215,7 @@ if out.history['val_accuracy'][24] >= .78:
     import smtplib
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
-    s.login("sdhah1999@gmail.com", "axnxovombplymgvw")
+    s.login("sdhah1999@gmail.com", "xxxxxxxxxxxxxxx")
    
 
 
