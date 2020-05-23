@@ -196,7 +196,7 @@ out.history
 # In[ ]:
 
 
-print(out.history['val_acc'][24])
+print(out.history['val_accuracy'][24])
 
 
 # In[ ]:
@@ -205,13 +205,13 @@ print(out.history['val_acc'][24])
 optimizer=model.optimizer
 learningRate=lR
 mod =str(model.layers)
-accuracy = str(out.history['val_acc'][24])
+accuracy = str(out.history['val_accuracy'][24])
 
 
 # In[ ]:
 
 
-if out.history['val_acc'][24] >= .78:
+if out.history['val_accuracy'][24] >= .78:
     import smtplib
     s = smtplib.SMTP('smtp.gmail.com', 587)
     s.starttls()
@@ -219,8 +219,8 @@ if out.history['val_acc'][24] >= .78:
    
 
 
-    subject1= 'optimizer'
-    subject2= 'learning rate'
+    subject1= 'Accuracy'
+    subject2= 'CNN Architecture'
 
     subject3= 'optimizer'
     subject4= 'learning rate'
